@@ -1,0 +1,24 @@
+$mainColor: #fdd099;
+%circleButton{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid #fff;
+}
+button{
+    cursor: pointer;
+}
+@import '../fonts/stylesheet.css';
+@import 'header.scss';
+@import 'main.scss';
+@import 'about.scss';
+@import 'navigation.scss';
+@import 'aboutUs.scss';
+@import 'advantages.scss';
+@import 'plan.scss';
+
+
+body{
+    margin: 0;
+}

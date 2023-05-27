@@ -1,0 +1,106 @@
+.plan {
+    display: grid;
+    grid-template-columns: repeat(3, 640px);
+    grid-template-rows: repeat(2, 500px);
+    position: relative;
+
+    article {
+        position: relative;
+        width: 100%;
+
+        button {
+            position: absolute;
+            bottom: 40px;
+            width: 240px;
+            height: 56px;
+            background-color: #ed9438;
+            border: none;
+            left: 200px;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+}
+
+
+.day {
+    width: 50%;
+    height: min-content;
+    display: grid;
+    grid-template-areas:
+        'img p'
+        'img n';
+    grid-template-columns: 142px;
+    grid-template-rows: 58px;
+    column-gap: 21px;
+    align-items: end;
+
+    img {
+        grid-area: img;
+        justify-self: end;
+        margin-bottom: 21px;
+    }
+
+    p {
+        grid-area: p;
+        font-family: 'Mont';
+        font-size: 18px;
+        margin: 0;
+    }
+
+    span {
+        grid-area: n;
+        font-family: 'Mont';
+        font-size: 67px;
+    }
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff3ea;
+    width: 212px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin: 36px 0 0;
+        font-family: 'Mont';
+        font-weight: 600;
+        color: $mainColor;
+        font-size: 18px;
+    }
+
+    span {
+        font-family: 'Mont';
+        font-size: 64px;
+        color: $mainColor;
+    }
+}
+
+.description {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    font-family: "Mont";
+    align-items: end;
+    grid-template-rows: 66px 29px 43px 25px 46px 24px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+
+        span {
+            color: $mainColor;
+        }
+    }
+}

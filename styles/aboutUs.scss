@@ -1,0 +1,421 @@
+.aboutUs {
+    display: grid;
+    grid-template-columns: repeat(3, 640px);
+    grid-template-rows: repeat(3, 500px);
+}
+
+.aboutUsDescription {
+    padding-left: 69px;
+    position: relative;
+
+    h1 {
+        font-size: 24px;
+        line-height: 44px;
+        color: #001514;
+        font-family: "Mont";
+        margin: 58px 0 0 21px;
+        font-weight: 400;
+
+        span {
+            color: $mainColor;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 27px;
+        color: #2a2f37;
+        font-weight: 300;
+        font-family: "Mont";
+        margin: 32px 0 0 0;
+        max-width: 500px;
+    }
+
+    button {
+        color: $mainColor;
+        background: none;
+        border: none;
+        margin: 22px 0 0;
+        font-size: 20px;
+        padding: 0;
+
+        img {
+            position: static;
+            margin: 2px 9px;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 45px;
+    }
+}
+
+.aboutUsVideo {
+    position: relative;
+    background: url(../image/tube.png) -17px -17px no-repeat border-box;
+    ;
+    border: 17px solid rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        margin: 0;
+        position: absolute;
+        bottom: -17px;
+        left: -17px;
+        background: $mainColor;
+        opacity: .6;
+        width: 426px;
+        height: 160px;
+        font-size: 40px;
+        line-height: 53px;
+        color: #001514;
+        font-weight: 200;
+        font-family: "Mont";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 108px;
+        height: 108px;
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .5);
+        position: relative;
+        padding: 0;
+
+        img {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+        }
+    }
+}
+
+.aboutUsList {
+    ul {
+        list-style: none;
+        margin: 65px 0 0 100px;
+        padding: 0;
+    }
+
+    li {
+        font-size: 14px;
+        line-height: 27px;
+        color: #2a2f37;
+        font-weight: 300;
+        font-family: "Mont";
+        position: relative;
+        max-width: 490px;
+        margin-bottom: 15px;
+
+        img {
+            position: absolute;
+            left: -30px;
+            top: 5px;
+
+        }
+    }
+}
+
+.aboutUsExpirenceYears {
+    height: 50%;
+    width: 100%;
+    position: relative;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 60px;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: "Mont";
+        margin: 49px 0 0 212px;
+        height: 50px;
+    }
+
+    img {
+        margin-left: 70px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: "Mont";
+        position: absolute;
+        position: absolute;
+        margin: 0;
+        top: 46px;
+        left: 212px;
+
+        span {
+            position: absolute;
+            font-size: 69px;
+            font-weight: 200;
+            top: 46px;
+            left: 0px;
+        }
+    }
+}
+
+.aboutUsExpirenceDeal {
+    height: 50%;
+    width: 100%;
+    position: relative;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 60px;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: "Mont";
+        position: absolute;
+        top: -11px;
+        right: 206px;
+
+    }
+
+    img {
+        position: absolute;
+        right: 66px;
+        top: 41px;
+
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: "Mont";
+        margin: 0;
+        top: 35px;
+        position: absolute;
+        right: 152px;
+        width: 110px;
+
+        span {
+            position: absolute;
+            font-size: 69px;
+            font-weight: 200;
+            top: 46px;
+            right: 57px;
+            width: 205px;
+        }
+    }
+}
+
+.aboutUsBuildingObject {
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'img title'
+        'img des'
+        'img .';
+    grid-template-columns: 162px;
+    column-gap: 50px;
+    align-items: end;
+    grid-template-rows: 109px 46px 36px;
+
+    img {
+        grid-area: img;
+        justify-self: end;
+    }
+
+    h2 {
+        grid-area: title;
+        margin: 0;
+        font-size: 18px;
+        line-height: 60px;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: "Mont";
+    }
+
+    p {
+        grid-area: des;
+        font-size: 18px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: "Mont";
+        margin: 0;
+        position: relative;
+        span {
+            font-size: 69px;
+            font-weight: 200;
+            position: absolute;
+            top: 45px;
+            left: 0;
+        }
+    }
+}
+
+.aboutUsBuildingSquare{
+    width: 100%;
+    height: 50%;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'title img'
+        'des img'
+        '. img';
+    grid-template-columns: 433px;
+    column-gap: 50px;
+    align-items: end;
+    grid-template-rows: 98px 46px 36px;
+    justify-items: end;
+    img {
+        grid-area: img;
+        justify-self: start;
+    }
+
+    h2 {
+        grid-area: title;
+        margin: 0;
+        font-size: 18px;
+        line-height: 60px;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: "Mont";
+    }
+
+    p {
+        grid-area: des;
+        font-size: 18px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: "Mont";
+        margin: 0;
+        position: relative;
+        span {
+            font-size: 69px;
+            font-weight: 200;
+            position: absolute;
+            top: 45px;
+            left: -191px;
+        }
+    }
+}
+
+.aboutUsCrane{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutUsIsland{
+    grid-column: 1/3;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+    }
+}
+
+.aboutUsInvestingDeposit{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'img title'
+        'img des'
+        'img .';
+    grid-template-columns: 159px;
+    column-gap: 58px;
+    align-items: end;
+    grid-template-rows: 109px 46px 36px;
+
+    img {
+        grid-area: img;
+        justify-self: end;
+    }
+
+    h2 {
+        grid-area: title;
+        margin: 0;
+        font-size: 18px;
+        line-height: 60px;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: "Mont";
+    }
+
+    p {
+        grid-area: des;
+        font-size: 18px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: "Mont";
+        margin: 0;
+        position: relative;
+        span {
+            font-size: 69px;
+            font-weight: 200;
+            position: absolute;
+            top: 45px;
+            left: 0;
+        }
+    }
+}
+.aboutUsInvestingWithdraw{
+    width: 100%;
+    height: 50%;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'title img'
+        'des img'
+        '. img';
+    grid-template-columns: 438px;
+    column-gap: 57px;
+    align-items: end;
+    grid-template-rows: 98px 46px 36px;
+    justify-items: end;
+    img {
+        grid-area: img;
+        justify-self: start;
+    }
+
+    h2 {
+        grid-area: title;
+        margin: 0;
+        font-size: 18px;
+        line-height: 60px;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: "Mont";
+    }
+
+    p {
+        grid-area: des;
+        font-size: 18px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: "Mont";
+        margin: 0;
+        position: relative;
+        span {
+            font-size: 69px;
+            font-weight: 200;
+            position: absolute;
+            top: 45px;
+            left: -199px;
+        }
+    }
+}

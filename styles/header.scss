@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+        'logo lang . time email button';
+    grid-template-columns: repeat(6, 1fr);
+    z-index: 1;
+    background: rgba(0,0,0,.5);
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    padding-bottom: 25px;
+}
+.email{
+    grid-area: email;
+    font-family: 'Mont';
+    justify-self: start;
+    button {
+        @extend %circleButton;
+        margin-right: 6px;
+    }
+    span{
+        color: $mainColor;
+    }
+}
+.time {
+    grid-area: time;
+    font-size: 37px;
+    font-family: 'Mont';
+    padding-right: 34px;
+    color: $mainColor;
+}
+.buttonLanguage{
+    @extend %circleButton;
+    margin-left: 16px;
+    color: $mainColor;
+}
+
+.blockLanguage {
+    grid-area: lang;
+    padding-left: 32px;
+}
+
+.authorization {
+    font-family: 'Mont';
+    font-size: 16px;
+    grid-area: button;
+    width: 240px;
+    height: 60px;
+    background: $mainColor;
+    border: none;
+    margin-right: 30px;
+}
