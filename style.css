@@ -663,14 +663,14 @@ button {
 .plan {
   display: grid;
   grid-template-columns: repeat(3, 640px);
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: repeat(3, 500px);
   position: relative;
 }
 .plan article {
   position: relative;
   width: 100%;
 }
-.plan article button {
+.plan article > button {
   position: absolute;
   bottom: 40px;
   width: 240px;
@@ -754,8 +754,280 @@ button {
   color: #fdd099;
 }
 
+.offer {
+  width: 58%;
+  position: relative;
+  z-index: 1;
+}
+.offer p {
+  margin: 35px 0 0 72px;
+  font-size: 18px;
+}
+.offer span {
+  margin: 0 0 0 73px;
+  font-size: 67px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.offerPlan {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ed9438;
+  width: 212px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.offerDescription {
+  text-align: center;
+  width: 390px;
+  margin: 65px auto;
+  font-size: 24px;
+  line-height: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.offerContainer {
+  background: url(../image/sean-pollock-203658-unsplash.png);
+}
+.offerContainer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(237, 148, 56, 0.5);
+}
+.offerContainer .offerSupport {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+
+.calculator {
+  grid-column: 2/4;
+  background: rgba(14, 25, 21, 0.7);
+  position: relative;
+  display: grid;
+  grid-template-areas: "calc prof";
+  grid-template-columns: repeat(2, 1fr);
+}
+.calculator::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../image/Finances-scaled.png);
+  background-size: cover;
+  overflow: hidden;
+  z-index: -1;
+}
+.calculator .logo {
+  position: absolute;
+  top: 40px;
+  left: 493px;
+}
+.calculator > p {
+  margin: 59px 0 0 515px;
+  font-size: 24px;
+  position: absolute;
+}
+.calculator > p span {
+  color: #ed9438;
+}
+
+.calculatorContainer {
+  grid-area: calc;
+  padding: 0 0 0 70px;
+  display: grid;
+  width: 500px;
+  grid-template-rows: 172px 73px 44px 16px 61px 57px;
+  align-items: end;
+}
+.calculatorContainer p {
+  margin: 0;
+  font-size: 16px;
+}
+.calculatorContainer .dollar {
+  position: relative;
+  left: 471px;
+  top: 36px;
+}
+.calculatorContainer select {
+  height: 57px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0 24px;
+  font-family: "Mont";
+}
+.calculatorContainer select p {
+  margin-left: 10px;
+  color: #ed9438;
+}
+.calculatorContainer input {
+  height: 57px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.calculatorContainer .sliderMax {
+  text-align: end;
+  bottom: 91px;
+  width: 500px;
+}
+.calculatorContainer .sliderMin {
+  bottom: 53px;
+}
+.calculatorContainer .sliderMax,
+.calculatorContainer .sliderMin {
+  position: relative;
+  font-size: 12px;
+}
+.calculatorContainer .slider {
+  -webkit-appearance: none;
+  width: 500px;
+  height: 5px;
+  background: #ed9438;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.calculatorContainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ed9438;
+  cursor: pointer;
+}
+.calculatorContainer .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ed9438;
+  cursor: pointer;
+}
+
+.calculatorProfit {
+  grid-area: prof;
+  padding-right: 13px;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  grid-template-rows: 173px 77px 29px 76px 76px;
+}
+.calculatorProfit > button {
+  height: 58px;
+  width: 241px;
+  margin-left: 13px;
+  font-size: 18px;
+  background: #ed9438;
+  border: none;
+  color: #fff;
+}
+.calculatorProfit span {
+  font-size: 62px;
+  font-weight: 300;
+  letter-spacing: -0.9px;
+  color: #fdd099;
+}
+.calculatorProfit p {
+  font-size: 18px;
+  margin: 0;
+  color: #ed9438;
+}
+
+.map {
+  background: url(../image/photo-1512453979798-5ea266f8880c.png);
+  height: 1000px;
+}
+
+.gorizontalSlider {
+  position: relative;
+  width: 1720px;
+  height: 750px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.gorizontalSlider > img {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+.gorizontalSlider h2 {
+  margin: 0;
+  padding: 90px 0 0 90px;
+  font-weight: 300;
+}
+.gorizontalSlider h2 span {
+  color: #ed9438;
+}
+.gorizontalSlider > p {
+  margin: 60px 0 0 69px;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 91%;
+}
+
+.horizntalSliderContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  column-gap: 30px;
+}
+.horizntalSliderContainer::-webkit-scrollbar {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.horizntalSliderContainer::-webkit-scrollbar-track {
+  height: 2px;
+}
+.horizntalSliderContainer::-webkit-scrollbar-thumb {
+  background-color: #ed9438;
+  height: 2px;
+}
+.horizntalSliderContainer article {
+  width: 429px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+  align-items: center;
+}
+.horizntalSliderContainer article .date {
+  margin: 97px 0 22px 0;
+  font-size: 24px;
+  text-align: center;
+}
+.horizntalSliderContainer article h3 {
+  margin: 0 0 22px 0;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+}
+.horizntalSliderContainer article .text {
+  margin: 0;
+  max-width: 278px;
+  text-align: center;
+}
+.horizntalSliderContainer article > img {
+  position: absolute;
+  right: -72px;
+  bottom: 145px;
+}
+
 body {
   margin: 0;
+  font-family: "Mont";
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,14 @@
 .plan {
     display: grid;
     grid-template-columns: repeat(3, 640px);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-rows: repeat(3, 500px);
     position: relative;
 
     article {
         position: relative;
         width: 100%;
 
-        button {
+        >button {
             position: absolute;
             bottom: 40px;
             width: 240px;
@@ -102,5 +102,217 @@
         span {
             color: $mainColor;
         }
+    }
+}
+
+.offer {
+    width: 58%;
+    position: relative;
+    z-index: 1;
+
+    p {
+        margin: 35px 0 0 72px;
+        font-size: 18px;
+    }
+
+    span {
+        margin: 0 0 0 73px;
+        font-size: 67px;
+        font-weight: 300;
+        letter-spacing: .03em;
+        color: #fff;
+
+    }
+}
+
+.offerPlan {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ed9438;
+    width: 212px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.offerDescription {
+    text-align: center;
+    width: 390px;
+    margin: 65px auto;
+    font-size: 24px;
+    line-height: 35px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.offerContainer {
+    background: url(../image/sean-pollock-203658-unsplash.png);
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(237, 148, 56, .5);
+    }
+
+    .offerSupport {
+        background-color: #fff;
+        color: #000;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.calculator {
+    grid-column: 2/4;
+    background: rgba(14, 25, 21, 0.7);
+    position: relative;
+    display: grid;
+    grid-template-areas: 'calc prof';
+    grid-template-columns: repeat(2,1fr);
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url(../image/Finances-scaled.png);
+        background-size: cover;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 493px;
+    }
+
+    >p {
+        margin: 59px 0 0 515px;
+        font-size: 24px;
+        position: absolute;
+
+        span {
+            color: #ed9438;
+        }
+    }
+}
+
+.calculatorContainer {
+    grid-area: calc;
+    padding: 0 0 0 70px;
+    display: grid;
+    width: 500px;
+    grid-template-rows:  172px 73px 44px 16px 61px 57px;
+    align-items: end;
+
+    p {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .dollar {
+        position: relative;
+        left: 471px;
+        top: 36px;
+    }
+
+    select {
+        height: 57px;
+        font-size: 18px;
+        background: rgba($color: #fff, $alpha: 0.4);
+        padding: 0 24px;
+        font-family: 'Mont';
+
+        p {
+            margin-left: 10px;
+            color: #ed9438;
+        }
+    }
+
+    input {
+        height: 57px;
+        background: rgba($color: #fff, $alpha: 0.4);
+    }
+
+    .sliderMax {
+        text-align: end;
+        bottom: 91px;
+        width: 500px;
+    }
+
+    .sliderMin {
+        bottom: 53px;
+    }
+
+    .sliderMax,
+    .sliderMin {
+        position: relative;
+        font-size: 12px;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 500px;
+        height: 5px;
+        background: #ed9438;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #ed9438;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #ed9438;
+        cursor: pointer;
+    }
+}
+
+.calculatorProfit {
+    grid-area: prof;
+    padding-right: 13px;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    grid-template-rows: 173px 77px 29px 76px 76px;
+    >button{
+        height: 58px;
+        width: 241px;
+        margin-left: 13px;
+        font-size: 18px;
+        background: #ed9438;
+        border: none;
+        color: #fff;
+    }
+    span{
+        font-size: 62px;
+        font-weight: 300;
+        letter-spacing: -.9px;
+        color: $mainColor;
+    }
+    p{
+        font-size: 18px;
+        margin: 0;
+        color: #ed9438;
     }
 }
