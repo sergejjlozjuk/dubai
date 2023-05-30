@@ -38,18 +38,22 @@
     flex-wrap: nowrap;
     overflow-x: scroll;
     column-gap: 30px;
-    &::-webkit-scrollbar{
+
+    &::-webkit-scrollbar {
         width: 100%;
         height: 5px;
         background-color: rgba($color: #000000, $alpha: .5);
     }
-    &::-webkit-scrollbar-track{
+
+    &::-webkit-scrollbar-track {
         height: 2px;
     }
-    &::-webkit-scrollbar-thumb{
+
+    &::-webkit-scrollbar-thumb {
         background-color: #ed9438;
         height: 2px;
     }
+
     article {
         width: 429px;
         display: flex;
@@ -82,5 +86,22 @@
             right: -72px;
             bottom: 145px;
         }
+    }
+}
+
+.gorizontalSliderButtons {
+    position: absolute;
+    display: flex;
+    bottom: -160px;
+    right: 0;
+    column-gap: 2px;
+
+    >div {
+        width: 212px;
+        height: 159px;
+        background-color: rgba(237, 148, 56, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

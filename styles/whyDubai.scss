@@ -1,0 +1,89 @@
+.whyDubai {
+    display: grid;
+    grid-template-columns: repeat(3, 640px);
+    grid-template-rows: repeat(3, 500px);
+    position: relative;
+
+    .title {
+        img {
+            position: absolute;
+            left: 69px;
+            top: 185px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 197px 0 0 90px;
+            font-weight: 500;
+            line-height: 44px;
+
+            span {
+                color: #ed9438;
+            }
+        }
+    }
+
+    .modern {
+        background: url(../image/modern.png) center;
+        background-position-y: -150px;
+
+    }
+
+    .description {
+        box-sizing: border-box;
+        padding: 70px;
+        display: grid;
+        grid-template-rows: 124px 150px;
+        width: 100%;
+        height: 100%;
+
+        h2 {
+            margin: 0;
+            color: #ed9438;
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+        p {
+            font-weight: 200;
+            margin: 0;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: left;
+        }
+
+        &.right {
+
+            h2,
+            p {
+                text-align: end;
+            }
+        }
+        &.invest{
+            grid-template-rows: 72px 150px 99px;
+            button{
+                background-color: #ed9438;
+                color: #fff;
+                border: none;
+                width: 240px;
+                height: 56px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .hotel {
+        background: url(../image/photo-1518684079-3c830dcef090.png) left;
+    }
+
+    .sunset {
+        background: url(../image/stock-photo-sunset-over-dubai-aerial-skyline-361948016.png);
+        background-position-x: -188px;
+        background-size: 130%;
+        background-position-y: -39px;
+    }
+    .window{
+        background: url(../image/58_-min.png);
+        grid-column: 1/3;
+    }
+}

@@ -1025,6 +1025,203 @@ button {
   bottom: 145px;
 }
 
+.gorizontalSliderButtons {
+  position: absolute;
+  display: flex;
+  bottom: -160px;
+  right: 0;
+  column-gap: 2px;
+}
+.gorizontalSliderButtons > div {
+  width: 212px;
+  height: 159px;
+  background-color: rgba(237, 148, 56, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whyDubai {
+  display: grid;
+  grid-template-columns: repeat(3, 640px);
+  grid-template-rows: repeat(3, 500px);
+  position: relative;
+}
+.whyDubai .title img {
+  position: absolute;
+  left: 69px;
+  top: 185px;
+}
+.whyDubai .title h2 {
+  font-size: 22px;
+  margin: 197px 0 0 90px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.whyDubai .title h2 span {
+  color: #ed9438;
+}
+.whyDubai .modern {
+  background: url(../image/modern.png) center;
+  background-position-y: -150px;
+}
+.whyDubai .description {
+  box-sizing: border-box;
+  padding: 70px;
+  display: grid;
+  grid-template-rows: 124px 150px;
+  width: 100%;
+  height: 100%;
+}
+.whyDubai .description h2 {
+  margin: 0;
+  color: #ed9438;
+  font-weight: 300;
+  font-size: 30px;
+}
+.whyDubai .description p {
+  font-weight: 200;
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+}
+.whyDubai .description.right h2,
+.whyDubai .description.right p {
+  text-align: end;
+}
+.whyDubai .description.invest {
+  grid-template-rows: 72px 150px 99px;
+}
+.whyDubai .description.invest button {
+  background-color: #ed9438;
+  color: #fff;
+  border: none;
+  width: 240px;
+  height: 56px;
+  font-size: 18px;
+}
+.whyDubai .hotel {
+  background: url(../image/photo-1518684079-3c830dcef090.png) left;
+}
+.whyDubai .sunset {
+  background: url(../image/stock-photo-sunset-over-dubai-aerial-skyline-361948016.png);
+  background-position-x: -188px;
+  background-size: 130%;
+  background-position-y: -39px;
+}
+.whyDubai .window {
+  background: url(../image/58_-min.png);
+  grid-column: 1/3;
+}
+
+footer {
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #182b2a;
+  height: 500px;
+}
+footer .footerNav {
+  position: relative;
+}
+footer .footerNav .blockLanguage {
+  position: absolute;
+  top: 67px;
+  left: -16px;
+  padding: 0;
+}
+footer .footerNav .email {
+  position: absolute;
+  top: 67px;
+  left: 172px;
+}
+footer .footerNav nav {
+  position: absolute;
+  bottom: 151px;
+  font-size: 25px;
+  line-height: 37px;
+  width: 100%;
+  color: #fff;
+}
+footer .footerNav nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 111px;
+}
+footer .footerNav nav ul li > img {
+  margin-right: 21px;
+}
+footer .footerAbout {
+  display: grid;
+  grid-template-rows: 146px 41px 167px 94px;
+  grid-template-areas: "logo" "rights" "p";
+  justify-items: center;
+  align-items: end;
+}
+footer .footerAbout .logo {
+  margin-left: 19px;
+}
+footer .footerAbout .rights {
+  font-size: 15px;
+  color: #fff;
+}
+footer .footerAbout p {
+  line-height: 42px;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  max-width: 530px;
+  color: #fdd099;
+}
+footer .footerAbout .social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 155px;
+  box-sizing: border-box;
+}
+footer .footerAbout .social a {
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .support {
+  display: grid;
+  grid-template-rows: 116px 181px 45px;
+  grid-template-areas: "button";
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+}
+footer .support .authorization {
+  margin: 0;
+  justify-self: end;
+}
+footer .support p {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+footer .support p span {
+  color: #fdd099;
+}
+footer .support a {
+  font-size: 24px;
+  color: #fdd099;
+  text-decoration: underline;
+}
+
 body {
   margin: 0;
   font-family: "Mont";
